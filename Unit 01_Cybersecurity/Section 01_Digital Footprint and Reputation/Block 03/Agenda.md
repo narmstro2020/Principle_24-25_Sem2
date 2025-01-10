@@ -1,4 +1,8 @@
 
+# Block 3 Agenda
+- Black Day: Fri, 1/10/2025
+- Gold Day: Mon, 1/13/2025
+
 ## Welcome
 
 - Brief Discussion on The Nature of Security
