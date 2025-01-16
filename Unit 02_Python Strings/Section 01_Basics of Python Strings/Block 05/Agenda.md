@@ -20,6 +20,7 @@
 
 ## Relevant Instruction
 
+- [Notes](Notes.md)
  
 
 ## Interactive, Ownership, Resonate
