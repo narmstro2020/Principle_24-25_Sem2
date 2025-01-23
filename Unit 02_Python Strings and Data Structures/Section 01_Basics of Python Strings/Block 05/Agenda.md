@@ -26,3 +26,4 @@
 ## Interactive, Ownership, Resonate
 
 - [Unit 02: Section 01: Assignment](https://warren.instructure.com/courses/54448/assignments/893428)
+- [Starter Code](Assignment%20Start/main.py)
