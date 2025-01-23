@@ -11,3 +11,4 @@ print(difference_set)  # Output: {1, 2}
 
 sym_diff_set = set1 ^ set2  # or set1.symmetric_difference(set2)
 print(sym_diff_set)  # Output: {1, 2, 4, 5}
+
