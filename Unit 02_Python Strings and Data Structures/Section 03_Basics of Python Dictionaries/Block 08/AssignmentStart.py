@@ -13,8 +13,8 @@ print(library_book)
 data = {"John" : 67, "Jill" : 84, }  # add four more key value pairs
 sum = 0
 for value in data.values():
-    #add value to sum
-    pass # remove pass when done
+    #TODO: add value to sum
+    pass #TODO:  remove pass when done
 
 amount = len(data)
 average = sum / amount
@@ -25,7 +25,7 @@ print(f"Average is {average}")
 students = {
     "Alice" : {"Math" : 85, "English": 90},
     "Bob" : {"Math" : 70, "English": 95, "Spanish" : 87},
-    #Add 3 more students with fake grades in rando subjects.
+    #TODO: Add 3 more students with fake grades in rando subjects.
 }
 
 def add_student(name, grades):
