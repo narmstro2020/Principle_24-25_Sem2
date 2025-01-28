@@ -1,44 +1,40 @@
-#Assignment 1
+# Assignment 1
 book = {
-    "title" : "To Kill A Mockingbird",
-    #TODO: author, year, available.  Available will be True or False
-    #TODO: you can also use a different book.
+    "title": "To Kill A Mockingbird",
+    #TODO: add an author Key Value Pair
+    #TODO: also a publishing year
+    "available" : True
 }
 
-#TODO: book["available"] = New value which is either True or False
-#TODO: book["genre"] = "Fiction"
-print(book)
+#TODO: add a genre key value pair for the book
+#TODO: update the availablility status
 
-#Assignment 2
-class_grades = {
-    "John" : 67,
-    #TODO: 4 more students name, grade
+# Assignment 2
+grades = {
+    "a" : 70,
+    "b" : 80,
+    "c" : 90,
 }
 
 sum = 0
-for grade in class_grades.values():
-    sum += grade
+for value in grades.values():
+    #TODO: add the value to the sum
+    pass #TODO:  remove when done.
 
-num_grades = len(class_grades)
-#TODO: average = find the average with MATH !!!!
-#TODO: print the average.
+number_of_grades = len(grades)
+#TODO: figure out the average and print :)
 
 
-#Assignment 3
+# Assignment 3
+
 students = {
-    "Alice" : {"Math" : 85, "English" : 90},
-    "Bob" : {"Math" : 75, "English" : 82, "Science" : 91},
-    #TODO: add 3 more students with rando names and course dictionaries
+    "Johnnie" : {"English" : 73, "Math" : 85},
+    "Susie" : {"English": 80, "Math" : 90, "Science": 82}
+    #TODO: add 3 more students.
 }
 
-def add_student(name, grades):
-    students[name] = grades
+def add_student(name, grades_to_add):
+    students[name] = grades_to_add
 
-add_student("Charlie", {"Math" : 72, "English" : 82})
-#TODO: use add_student to add 2 more students
-print(students)
-
-
-
-
-
+add_student("Horatio", {"English" : 73, "Math" : 85})
+#TODO: call 3 more times with new students
