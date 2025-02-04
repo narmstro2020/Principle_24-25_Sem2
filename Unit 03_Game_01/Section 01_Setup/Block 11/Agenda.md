@@ -18,7 +18,7 @@
 
 ## Relevant Instruction
 
-- [Notes](Notes.md)
+- See Resources in BurgerDog Folder
  
 
 ## Interactive, Ownership, Resonate
