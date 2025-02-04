@@ -1,6 +1,5 @@
-#Assignment 1
-ten_squares = [] # TODO: put in the square brackets a list comprehension.  See notes
-print(ten_squares)
+import math
 
-#Assignment 2
-#TODO:  Total RECALL from previous notes/assignments/etc.
+squared = [math.sqrt(x) for x in range(10)]
+
+print(squared)
