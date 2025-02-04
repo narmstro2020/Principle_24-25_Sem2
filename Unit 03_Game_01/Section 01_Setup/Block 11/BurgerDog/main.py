@@ -36,11 +36,11 @@ def prep_text(text: str, background_color: tuple[int, int, int], **locations):
     #TODO: create a rect variable and assign text.get_rect()
     #TODO: create a for location in locations loop
     #TODO: for loop block start
-    if location == "topleft":
-        rect.topleft = locations["topleft"]
-    elif location == "centerx":
-        rect.centerx = locations["centerx"]
-    #NOTE:  We'll add more later.
+        if location == "topleft":
+            rect.topleft = locations["topleft"]
+        elif location == "centerx":
+            rect.centerx = locations["centerx"]
+        #NOTE:  We'll add more later.
     #TODO: for loop block end
     #TODO: return (text_to_return, rect)
     pass #TODO: remove this when done.
