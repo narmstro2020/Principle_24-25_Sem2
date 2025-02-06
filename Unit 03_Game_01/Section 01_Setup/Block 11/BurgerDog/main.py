@@ -42,19 +42,18 @@ def prep_text(text: str, background_color: tuple[int, int, int], **locations):
     elif location == "centerx":
         rect.centerx = locations["centerx"]
     # TODO: (2025-02-06): add this elif portion
-    elif location = "y":
+    elif location == "y":
         rect.y = locations["y"]
     # TODO: (2025-02-06): add this elif portion
-    elif location = "topright"
-    rect.topright = locations["topright"]
-
-# TODO: (2025-02-06): add this elif portion
-elif location = "center"
-rect.center = locations["center"]
-# NOTE:  We'll add more later.
-# TODO: for loop block end
-# TODO: return (text_to_return, rect)
-pass  # TODO: remove this when done.
+    elif location == "topright":
+        rect.topright = locations["topright"]
+    # TODO: (2025-02-06): add this elif portion
+    elif location == "center":
+        rect.center = locations["center"]
+    # NOTE:  We'll add more later.
+    # TODO: for loop block end
+    # TODO: return (text_to_return, rect)
+    pass  # TODO: remove this when done.
 
 # Set Text Blocks
 # TODO: (2025-02-06): assign to (points_text, points_rect)
