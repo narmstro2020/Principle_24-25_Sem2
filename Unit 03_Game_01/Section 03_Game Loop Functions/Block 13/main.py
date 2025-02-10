@@ -119,7 +119,7 @@ def check_quit():
 
 def move_player():
     keys = pygame.key.get_pressed()
-    #TODO: (2025-02-10): check if keys[pygame.K_LEFT] and player.rect.left > 0:
+    #TODO: (2025-02-10): check if keys[pygame.K_LEFT] and player_rect.left > 0:
     #TODO: (cont.): the if statement block
     #TODO: (cont.):  the if statement block should subtract player_velocity from player_rect.x
     #TODO: (cont.):  set the player_image to player_image_left
