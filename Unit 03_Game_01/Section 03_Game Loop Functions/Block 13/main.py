@@ -106,6 +106,9 @@ player_rect.bottom = WINDOW_HEIGHT
 # TODO: (2025-02-06): create a burger_rect variable and aassign from burger_image.get_rect()
 burger_rect.topleft = (random.randint(0, WINDOW_WIDTH - 32), -BUFFER_DISTANCE)
 
+#NOTES:  running and not pause, running and pause, not running
+
+
 pygame.mixer.music.play()
 running = True
 is_paused = False
@@ -114,6 +117,7 @@ def check_quit():
     #TODO: (2025-02-10):  make a for loop:  for event in pygame.event.get():
     # TODO: (2025-02-10): start of for loop block
     # TODO: (2025-02-10):  check if event.type is equal to pygame.QUIT()
+    #TODO: (2025-02-10):  set running to False
     # TODO: (2025-02-10):  end of for loop block
     pass #TODO: (2025-02-10):  remove this when done.
 
