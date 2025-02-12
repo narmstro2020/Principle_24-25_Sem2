@@ -22,5 +22,7 @@
  
 
 ## Interactive, Ownership, Resonate
+- when done and working.  Turn in to Canvas.  
+- Assignment name is: Project 01_Burger Dog
 
 
