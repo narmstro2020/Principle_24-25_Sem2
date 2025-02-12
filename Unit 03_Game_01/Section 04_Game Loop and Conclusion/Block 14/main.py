@@ -18,8 +18,7 @@ score = 0
 burger_points = 0
 burgers_eaten = 0
 
-
-# TODO: create a player_lives variable and assign PLAYER_STARTING_LIVES to it
+player_lives = PLAYER_STARTING_LIVES
 # TODO: create a player_velocity variable and assign PLAYER_NORMAL_VELOCITY to it
 # TODO: create a boost_level variable and assign STARTING_BOOST_LEVEL to it
 # TODO: create a burger_velocity variable and assign STARTING_BURGER_VELOCITY to it
@@ -114,7 +113,6 @@ pygame.mixer.music.play()
 running = True
 is_paused = False
 
-
 def check_quit():
     # TODO: (2025-02-10):  make a for loop:  for event in pygame.event.get():
     # TODO: (2025-02-10): start of for loop block
@@ -123,7 +121,6 @@ def check_quit():
     # TODO: (2025-02-10):  break
     # TODO: (2025-02-10):  end of for loop block
     pass  # TODO: (2025-02-10):  remove this when done.
-
 
 def move_player():
     global player_image
@@ -154,19 +151,16 @@ def move_player():
 
     pass  # TODO: (2025-02-10):  remove this when done.
 
-
 def engage_boost(keys):
     # TODO: (2025-02-10): check if keys[pygame.K_SPACE] and boost_level > 0
     # TODO: (2025-02-10): subtract 1 from boost_level
     # TODO: (2025-02-10): else set player_velocity to PLAYER_NORMAL_VELOCITY
     pass  # TODO: (2025-02-10):  remove this when done.
 
-
 def move_burger():
     # TODO: (2025-02-10): add burger_velocity to burger_rect.y
     burger_points = int(burger_velocity * (WINDOW_HEIGHT - burger_rect.y + 100))
     pass  # TODO: (2025-02-10):  remove this when done.
-
 
 def handle_miss():
     # TODO: (2025-02-10): if burger_rect.y is greater than WINDOW_HEIGHT:
@@ -179,7 +173,6 @@ def handle_miss():
     # TODO: (2025-02-10):  set player_rect.bottom to WINDOW_HEIGHT
     # TODO: (2025-02-10):  set boost_level to STARTING_BOOST_LEVEL
     pass  # TODO: (2025-02-10):  remove this when done.
-
 
 def check_collisions():
     if player_rect.colliderect(burger_rect):
@@ -194,7 +187,6 @@ def check_collisions():
         # TODO: (2025-02-10):  then set boost_level to STARTING_BOOST_LEVEL
         pass  # TODO: (2025-02-10):  remove this when done.
 
-
 def update_hud():
     points_text = font.render("Burger Points: " + str(burger_points), True, ORANGE)
     score_text = font.render("Score: " + str(score), True, ORANGE)
@@ -203,11 +195,29 @@ def update_hud():
     boost_text = font.render("Boost: " + str(boost_level), True, ORANGE)
     pass  # TODO: (2025-02-10):  remove this when done.
 
-
 def check_game_over():
-    # TODO: hold till 2025-02-12
-    pass  # TODO: (2025-02-10):  remove this when done.
-
+    #TODO: (2025-02-12): Add this game over code
+    global game_over_text, is_paused, score, burgers_eaten, player_lives, boost_level, burger_velocity, running
+    if player_lives == 0:
+        game_over_text = font.render(f"FINAL SCORE: {score}", True, ORANGE)
+        display_surface.blit(game_over_text, game_over_rect)
+        display_surface.blit(continue_text, continue_rect)
+        pygame.display.update()
+        pygame.mixer.music.stop()
+        is_paused = True
+        while is_paused:
+            for event in pygame.event.get():
+                if event.type == pygame.KEYDOWN:
+                    score = 0
+                    burgers_eaten = 0
+                    player_lives = PLAYER_STARTING_LIVES
+                    boost_level = STARTING_BOOST_LEVEL
+                    burger_velocity = STARTING_BURGER_VELOCITY
+                    pygame.mixer.music.play()
+                    is_paused = False
+                if event.type == pygame.QUIT:
+                    is_paused = False
+                    running = False
 
 def display_hud():
     display_surface.fill(BLACK)
@@ -219,10 +229,22 @@ def display_hud():
     # TODO (2025-02-10): blit burger_image, burger_rect
     pass  # TODO: (2025-02-10):  remove this when done.
 
-
 def handle_clock():
     pygame.display.update()
     clock.tick(FPS)
     pass  # TODO: (2025-02-10):  remove this when done.
 
-## GAME LOOP COMING SOON.
+while running:
+    #TODO: (2025-02-12): Add the function calls below
+    check_quit()
+    move_player()
+    move_burger()
+    handle_miss()
+    check_collisions()
+    update_hud()
+    check_game_over()
+    display_hud()
+    handle_clock()
+
+#TODO: (2025-02-12): Add this call to pygame.quit()
+pygame.quit()
