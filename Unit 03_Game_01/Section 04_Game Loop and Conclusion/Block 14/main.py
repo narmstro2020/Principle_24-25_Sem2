@@ -153,6 +153,7 @@ def move_player():
 
 def engage_boost(keys):
     # TODO: (2025-02-10): check if keys[pygame.K_SPACE] and boost_level > 0
+    # TODO: (2025-02-13): player_velocity = PLAYER_BOOST_VELOCITY
     # TODO: (2025-02-10): subtract 1 from boost_level
     # TODO: (2025-02-10): else set player_velocity to PLAYER_NORMAL_VELOCITY
     pass  # TODO: (2025-02-10):  remove this when done.
