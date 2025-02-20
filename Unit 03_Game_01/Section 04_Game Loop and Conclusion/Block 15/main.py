@@ -77,7 +77,7 @@ def prep_text(text: str, background_color: tuple[int, int, int], **locations):
 # TODO: (continued): topright=(WINDOW_WIDTH - 10, 10)
 
 # TODO: (2025-02-06): assign to (boost_text, boost_rect)
-# TODO: (continued): the result of the call to prep_text() given f"Boost: (boost_level)", ORANGE,
+# TODO: (continued): the result of the call to prep_text() given f"Boost: {boost_level}", ORANGE,
 # TODO: (continued): topright=(WINDOW_WIDTH - 10, 50)
 
 # TODO: (2025-02-06): assign to (game_over_text, game_over_rect)
