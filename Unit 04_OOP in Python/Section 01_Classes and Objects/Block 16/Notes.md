@@ -62,7 +62,7 @@ dog1.bark()
 
 ---
 
-## 14. Examples
+## 3. Examples
 
 ### Examples 1: Employee Management System
 Create an `Employee` class with attributes like name, salary, and department. Add class methods to modify company policies.
