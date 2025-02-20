@@ -13,12 +13,11 @@
 
 ## Review
 
-- 
+- None
 
 ## Relevant Instruction
 
-- See Resources in BurgerDog Folder
- 
+- [Notes](Notes.md) 
 
 ## Interactive, Ownership, Resonate
 
