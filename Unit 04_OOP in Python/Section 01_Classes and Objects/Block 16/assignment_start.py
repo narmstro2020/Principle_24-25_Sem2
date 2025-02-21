@@ -3,7 +3,6 @@ class Book:
         self.title = title
         self.author = author
 
-
 class Library:
     def __init__(self):
         self.books = []
@@ -13,11 +12,11 @@ class Library:
         pass  #TODO: remove when done.
 
     def remove_book(self, book):
-        #TODO: use self.books's remove method and pass in book as the remove method's only argument
+        #TODO: use self.books's remove method and pass in book as the append method's only argument
         pass  #TODO: remove when done.
 
     def list_books(self):
-        #Note: need a for loop
+        #TODO: need a for loop
         for book in self.books:
             #TODO: print out f"{book.title} by {book.author}
             pass  # TODO: remove when done.
@@ -25,8 +24,8 @@ class Library:
 
 my_library = Library()
 
-book0 = Book("To Kill a Mockingbird", "Harper Lee")
-book1 = Book("The Great Gatsby", "F. Scott Fitzgerald")
-my_library.add_book(book0)
-my_library.add_book(book1)
+book_0 = Book("To Kill a Mockingbird", "Harper Lee")
+book_1 = Book("The Great Gatsby", "F. Scott Fitzgerald")
+my_library.add_book(book_0)
+my_library.add_book(book_1)
 my_library.list_books()
