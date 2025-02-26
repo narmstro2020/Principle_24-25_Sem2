@@ -9,7 +9,7 @@
 
 ## Aim
 
-- Polymorphism and Encapsulation
+- Polymorphism, Encapsulation, and Inheritance
 
 ## Review
 
