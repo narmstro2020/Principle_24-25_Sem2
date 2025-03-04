@@ -50,4 +50,6 @@ class BankAccount:
 
 fred = BankAccount(500, "Fred")
 ethel = BankAccount(600, "Ethel")
+print(fred)
+print(ethel)
 print(fred + ethel)
