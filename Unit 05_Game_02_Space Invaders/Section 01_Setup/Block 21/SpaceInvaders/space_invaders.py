@@ -33,3 +33,43 @@ class Game:
 
         #Set font
         self.font = pygame.font.Font("Facon.ttf", 32)
+
+    def update(self):
+        """Update the game"""
+        ... #TODO: we will do this one later.
+
+    def draw(self):
+        """Draw the HUD and other information to display"""
+        ... #TODO: we will do this one later.
+
+    def shift_aliens(self):
+        """Shift a wave of aliens down the screen and reverse direction"""
+        ... #TODO: we will do this one later.
+
+    def check_collision(self):
+        """Check for collisions"""
+        ... #TODO: we will do this one later.
+
+    def check_round_completion(self):
+        """Check to see if a player has completed a single round"""
+        ... #TODO: we will do this one later.
+
+    def start_new_round(self):
+        """Start a new round"""
+        ... #TODO: we will do this one later.
+
+    def check_game_status(self, main_text, sub_text):
+        """Check to see the status of the game and how the player died"""
+        ... #TODO: we will do this one later.
+
+    def pause_game(self, main_text, sub_text):
+        """Pauses the game"""
+        ... #TODO: we will do this one later.
+
+
+    def reset_game(self):
+        """Reset the game"""
+        ... #TODO: we will do this one later.
+
+
+
