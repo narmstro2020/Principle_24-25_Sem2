@@ -66,7 +66,6 @@ class Game:
         """Pauses the game"""
         ... #TODO: we will do this one later.
 
-
     def reset_game(self):
         """Reset the game"""
         ... #TODO: we will do this one later.
