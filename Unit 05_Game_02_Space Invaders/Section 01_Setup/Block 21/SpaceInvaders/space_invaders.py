@@ -32,7 +32,7 @@ class Game:
         #TODO: (cont.) player_hit_sound to player_hit.wav
 
         #Set font
-        self.font = pygame.font.Font("Facon.ttf", 32)
+        self.font = pygame.font.Font("./fonts/Facon.ttf", 32)
 
     def update(self):
         """Update the game"""
