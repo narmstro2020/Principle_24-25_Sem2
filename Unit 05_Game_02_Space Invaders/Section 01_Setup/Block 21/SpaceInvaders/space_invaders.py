@@ -12,3 +12,10 @@ display_surface = pygame.display.set_mode(size)
 #Set FPS and clock
 FPS = 60
 clock = pygame.time.Clock()
+
+
+class Game:
+    """A class to help control and update gameplay"""
+
+    def __init__(self):
+        pass
