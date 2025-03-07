@@ -155,3 +155,44 @@ my_player_group.add(my_player)
 #Create the Game object
 my_game = Game(my_player, my_alien_group, my_player_bullet_group, my_alien_bullet_group)
 my_game.start_new_round()
+
+#The main game loop
+running = True
+while running:
+    #Check to see if the user wants to quit
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+        #The player wants to fire
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_SPACE:
+                my_player.fire()
+
+    # Fill the display
+    display_surface.fill((0, 0, 0))
+
+    #Update and display all sprite groups
+    my_player_group.update()
+    my_player_group.draw(display_surface)
+
+    my_alien_group.update()
+    my_alien_group.draw(display_surface)
+
+    my_player_bullet_group.update()
+    my_player_bullet_group.draw(display_surface)
+
+    my_alien_bullet_group.update()
+    my_alien_bullet_group.draw(display_surface)
+
+    #Update and draw Game object
+    my_game.update()
+    my_game.draw()
+
+    #Update the display and tick clock
+    pygame.display.update()
+    clock.tick(FPS)
+
+#End the game
+pygame.quit()
+
+
