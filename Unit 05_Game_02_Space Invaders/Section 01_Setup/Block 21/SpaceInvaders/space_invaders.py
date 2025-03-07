@@ -127,3 +127,15 @@ class PlayerBullet(pygame.sprite.Sprite):
         ... #TODO: we will finish later.
 
 
+class AlienBullet(pygame.sprite.Sprite):
+    """A class to model a bullet fired by the alien"""
+
+    def __init__(self, x, y, bullet_group):
+        """Initialize the bullet"""
+        super().__init__()
+        ... #TODO: we will finish later.
+
+    def update(self):
+        """Update the bullet"""
+        ... #TODO: we will finish later.
+
