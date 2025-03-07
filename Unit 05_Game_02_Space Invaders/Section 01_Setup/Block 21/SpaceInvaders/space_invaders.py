@@ -8,3 +8,7 @@ WINDOW_WIDTH = 1200
 WINDOW_HEIGHT = 700
 size = (WINDOW_WIDTH, WINDOW_HEIGHT)
 display_surface = pygame.display.set_mode(size)
+
+#Set FPS and clock
+FPS = 60
+clock = pygame.time.Clock()
