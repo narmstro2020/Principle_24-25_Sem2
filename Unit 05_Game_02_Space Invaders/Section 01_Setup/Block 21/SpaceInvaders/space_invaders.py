@@ -71,6 +71,7 @@ class Game:
         """Reset the game"""
         ... #TODO: we will do this one later.
 
+
 class Player(pygame.sprite.Sprite):
     """A class to model a spaceship the user can control"""
 
@@ -90,4 +91,39 @@ class Player(pygame.sprite.Sprite):
     def reset(self):
         """Reset the players position"""
         ... #TODO: we will finish later
+
+
+class Alien(pygame.sprite.Sprite):
+    """A class to model an enemy alien"""
+
+    def __init__(self, x, y, velocity, bullet_group):
+        """Initialize the alien"""
+        super().__init__()
+        ... #TODO: we will do this later
+
+    def update(self):
+        """Update the alien"""
+        ... #TODO: we will do this later
+
+    def fire(self):
+        """Fire a bullet"""
+        ... #TODO: we will do this later.
+
+    def reset(self):
+        """Reset the alien position"""
+        ... #TODO: we will do this later.
+
+
+class PlayerBullet(pygame.sprite.Sprite):
+    """A class to model a bullet fired by the player"""
+
+    def __init__(self, x, y, bullet_group):
+        """Initialize the bullet"""
+        super().__init__()
+        ... #TODO: we will finish later.
+
+    def update(self):
+        """Update the bullet"""
+        ... #TODO: we will finish later.
+
 
