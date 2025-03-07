@@ -139,3 +139,19 @@ class AlienBullet(pygame.sprite.Sprite):
         """Update the bullet"""
         ... #TODO: we will finish later.
 
+
+#Create bullet groups
+my_player_bullet_group = pygame.sprite.Group()
+#TODO: repeat for my_alien_bullet_group
+
+#Create a player group and Player object
+my_player_group = pygame.sprite.Group()
+my_player = Player(my_player_bullet_group)
+my_player_group.add(my_player)
+
+#Create an alien group.  Will add Alien objects via the game's start new round method
+#TODO: create my_alien_group
+
+#Create the Game object
+my_game = Game(my_player, my_alien_group, my_player_bullet_group, my_alien_bullet_group)
+my_game.start_new_round()
