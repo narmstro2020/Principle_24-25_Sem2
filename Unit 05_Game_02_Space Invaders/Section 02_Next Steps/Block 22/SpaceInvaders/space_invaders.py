@@ -135,7 +135,7 @@ class AlienBullet(pygame.sprite.Sprite):
         self.image = pygame.image.load("./assets/images/red_laser.png")
         self.rect = self.image.get_rect()
         #TODO: (3/11/2025) assign x to self.rect.centerx
-        #TODO: (3/11/2025) assign do the same for centery
+        #TODO: (3/11/2025) do the same for centery
 
         #TODO: (3/11/2025) assign 10 to self.velocity
         ... #TODO: we will finish later.
