@@ -138,11 +138,16 @@ class AlienBullet(pygame.sprite.Sprite):
         #TODO: (3/11/2025) do the same for centery
 
         #TODO: (3/11/2025) assign 10 to self.velocity
-        ... #TODO: we will finish later.
+        #TODO: (3/11/2025) call bullet_group's add method and pass in self.
 
     def update(self):
         """Update the bullet"""
-        ... #TODO: we will finish later.
+         #TODO: (3/11/2025) add to self.velocity to self.rect.y:  Hint Hint:  +=
+
+        if self.rect.top > WINDOW_HEIGHT:
+            self.kill()
+
+
 
 
 #Create bullet groups
