@@ -77,11 +77,26 @@ class Player(pygame.sprite.Sprite):
     def __init__(self, bullet_group):
         """Initialize the player"""
         super().__init__()
-        ... #TODO: we will finish later
+        # TODO: (3/11/2025) assign to self.image the image loaded from "player_ship.png"
+        # TODO: (3/11/2025) assign to self.rect the rect from the image
+        # TODO: (3/11/2025) assign to self.rect.centerx the value of half of the WINDOW_WIDTH use //
+        # TODO: (3/11/2025) assign to self.rect.bottom the WINDOW_HEIGHT
+
+        # TODO: (3/11/2025) assign to self.lives the value of 5
+        # TODO: (3/11/2025) assign to self.velocity the value 8
+
+        # TODO: (3/11/2025) assign self.bullet_group appropriately
+
+        # TODO: (3/11/2025) assign to self.shoot_sound the sound loaded from player_fire.wave
 
     def update(self):
         """Update the player"""
-        ... #TODO: we will finish later
+        keys = pygame.key.get_pressed()
+
+        #Move the player within the bounds of the screen
+        if keys[pygame.K_LEFT] and self.rect.left > 0:
+            # TODO: (3/11/2025) subtract self.velocity from self.rect.x
+        # TODO: (3/11/2025) handle pressing K_RIGHT similarly to K_LEFT
 
     def fire(self):
         """Fire a bullet"""
