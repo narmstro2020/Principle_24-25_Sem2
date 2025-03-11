@@ -98,19 +98,37 @@ class Alien(pygame.sprite.Sprite):
     def __init__(self, x, y, velocity, bullet_group):
         """Initialize the alien"""
         super().__init__()
-        ... #TODO: we will do this later
+        # TODO: (3/11/2025) assign to self.image an image loaded from alien.png
+        # TODO: (3/11/2025) assign to self.rect the rect from the self.image
+        # TODO: (3/11/2025) assign to self.rect.topleft the tuple (x, y)
+
+        # TODO: (3/11/2025) assign to self.starting_x the value of x
+        # TODO: (3/11/2025) repeat for starting_y appropriately.
+
+        # TODO: (3/11/2025) assign to self.direction the value of 1
+        # TODO: (3/11/2025) assign to self.velocity the value of velocity
+        # TODO: (3/11/2025) assign to self.bullet_group the bullet_group
+
+        # TODO: (3/11/2025) assign to self.shoot_sound the value of pygame.mixer.Sound()
+        # TODO: (3/11/2025) (cont.) the sound from the assets folder alien_fire.wav
 
     def update(self):
         """Update the alien"""
-        ... #TODO: we will do this later
+        # TODO: (3/11/2025) add to self.rect.x the value of direction * velocity.  (Don't forget self
+
+        #Randomly fire a bullet
+        if random.randint(0, 1000) > 999 and len(self.bullet_group) < 3:
+            self.shoot_sound.play()
+            self.fire()
 
     def fire(self):
         """Fire a bullet"""
-        ... #TODO: we will do this later.
+        AlienBullet(self.rect.centerx, self.rect.bottom, self.bullet_group)
 
     def reset(self):
         """Reset the alien position"""
-        ... #TODO: we will do this later.
+        # TODO: (3/11/2025) assign to self.rect.topleft the tuple (self.starting_x, self.starting_y)
+        # TODO: (3/11/2025) assign to self.direction the value of 1
 
 
 class PlayerBullet(pygame.sprite.Sprite):
