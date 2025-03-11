@@ -155,7 +155,7 @@ class PlayerBullet(pygame.sprite.Sprite):
     def __init__(self, x, y, bullet_group):
         """Initialize the bullet"""
         super().__init__()
-        self.image = pygame.image.load("./assets/images/green_laser.png.png")
+        self.image = pygame.image.load("./assets/images/green_laser.png")
         self.rect = self.image.get_rect()
         # TODO: (3/11/2025) assign x to self.rect.centerx
         # TODO: (3/11/2025) do the same for centery
@@ -178,6 +178,7 @@ class AlienBullet(pygame.sprite.Sprite):
         super().__init__()
         self.image = pygame.image.load("./assets/images/red_laser.png")
         self.rect = self.image.get_rect()
+
         #TODO: (3/11/2025) assign x to self.rect.centerx
         #TODO: (3/11/2025) do the same for centery
 
