@@ -100,11 +100,14 @@ class Player(pygame.sprite.Sprite):
 
     def fire(self):
         """Fire a bullet"""
-        ... #TODO: we will finish later
+        #Restrict the number of bullets on screen at a time
+        if len(self.bullet_group) < 2:
+            # TODO: (3/11/2025) call self.shoot_sound's play method.
+            # TODO: (3/11/2025) create  PlayerBullet passing in self.rect.centerx, self.rect.top, self.bullet_group
 
     def reset(self):
         """Reset the players position"""
-        ... #TODO: we will finish later
+        # TODO: (3/11/2025) assign half of the window width using // to self.rect.centerx
 
 
 class Alien(pygame.sprite.Sprite):
