@@ -119,11 +119,19 @@ class PlayerBullet(pygame.sprite.Sprite):
     def __init__(self, x, y, bullet_group):
         """Initialize the bullet"""
         super().__init__()
-        ... #TODO: we will finish later.
+        self.image = pygame.image.load("./assets/images/green_laser.png.png")
+        self.rect = self.image.get_rect()
+        # TODO: (3/11/2025) assign x to self.rect.centerx
+        # TODO: (3/11/2025) do the same for centery
+
+        # TODO: (3/11/2025) assign 10 to self.velocity
+        # TODO: (3/11/2025) call bullet_group's add method and pass in self.
 
     def update(self):
         """Update the bullet"""
-        ... #TODO: we will finish later.
+        # TODO: (3/11/2025) subtract self.velocity from self.rect.y:
+        # TODO: (3/11/2025) check if self.rect.bottom is less than 0.
+            # TODO: (3/11/2025) the if block will then kill the sprite.
 
 
 class AlienBullet(pygame.sprite.Sprite):
