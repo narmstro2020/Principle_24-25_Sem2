@@ -87,7 +87,7 @@ class Player(pygame.sprite.Sprite):
 
         # TODO: (3/11/2025) assign self.bullet_group appropriately
 
-        # TODO: (3/11/2025) assign to self.shoot_sound the sound loaded from player_fire.wave
+        # TODO: (3/11/2025) assign to self.shoot_sound the sound loaded from player_fire.wav
 
     def update(self):
         """Update the player"""
