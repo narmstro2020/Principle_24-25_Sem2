@@ -125,6 +125,10 @@ class Alien(pygame.sprite.Sprite):
 
         # TODO: (3/11/2025) assign to self.direction the value of 1
         # TODO: (3/11/2025) assign to self.velocity the value of velocity
+
+        # EXAMPLE:  assign 3 to x means:  x = 3
+        # EXAMPLE:  assign to x the value of 3 means x = 3
+
         # TODO: (3/11/2025) assign to self.bullet_group the bullet_group
 
         # TODO: (3/11/2025) assign to self.shoot_sound the value of pygame.mixer.Sound()
@@ -132,6 +136,8 @@ class Alien(pygame.sprite.Sprite):
 
     def update(self):
         """Update the alien"""
+        #Example:  add to x the value of 3
+        #Example:  x += 3
         # TODO: (3/11/2025) add to self.rect.x the value of direction * velocity.  (Don't forget self
 
         #Randomly fire a bullet
@@ -187,7 +193,7 @@ class AlienBullet(pygame.sprite.Sprite):
 
     def update(self):
         """Update the bullet"""
-         #TODO: (3/11/2025) add to self.velocity to self.rect.y:  Hint Hint:  +=
+         #TODO: (3/11/2025) add self.velocity to self.rect.y:  Hint Hint:  +=
 
         if self.rect.top > WINDOW_HEIGHT:
             self.kill()
