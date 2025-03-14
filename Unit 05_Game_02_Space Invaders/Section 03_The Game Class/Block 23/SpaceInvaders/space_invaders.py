@@ -112,7 +112,7 @@ class Game:
         #Empty the bullet groups and reset player and remaining aliens
         # TODO: 3/13/2025: call self.alien_bullet_group's empty method
         # TODO: 3/13/2025: call self.player_bullet_group's empty method
-        # TODO: 3/13/2025: call self.player's reset group
+        # TODO: 3/13/2025: call self.player's reset method
         for alien in self.alien_group:
         # inside the for loop
         # TODO: 3/13/2025: call alien's reset method
