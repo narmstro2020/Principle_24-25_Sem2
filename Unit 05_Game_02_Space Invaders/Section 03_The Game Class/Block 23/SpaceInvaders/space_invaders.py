@@ -86,7 +86,7 @@ class Game:
         # end of if block.  back tab.
 
         # See if the player has collided with any bullet in the alien bullet group
-        # TODO: 3/13/2025 check if pygame.spritecollide is true passing in self.player, self.alien_bullet_group, True
+        # TODO: 3/13/2025 check if pygame.sprite.spritecollide is true passing in self.player, self.alien_bullet_group, True
         # TODO: 3/13/2025 call self.player_hit_sound's play method
         # TODO: 3/13/2025 subtract 1 from self.player.lives
         # TODO: 3/13/2025 call self.check_game_status passing in "You've been hit!", "Press 'Enter' to continue"
