@@ -67,7 +67,6 @@ class Game:
         pygame.draw.line(display_surface, WHITE, (0, 50), (WINDOW_WIDTH, 50), 4)
         pygame.draw.line(display_surface, WHITE, (0, WINDOW_HEIGHT - 100), (WINDOW_WIDTH, WINDOW_HEIGHT - 100), 4)
 
-
     def shift_aliens(self):
         """Shift a wave of aliens down the screen and reverse direction"""
         ... #TODO: we will do this one later.
