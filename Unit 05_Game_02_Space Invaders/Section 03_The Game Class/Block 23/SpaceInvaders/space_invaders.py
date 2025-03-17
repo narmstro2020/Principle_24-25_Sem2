@@ -96,10 +96,11 @@ class Game:
         """Check to see if a player has completed a single round"""
         # If the alien group is empty, you've completed the round
         # TODO: 3/13/2025: check if not self.alien_group
+        if not self.alien_group:
         # if block begin
-        # TODO: 3/13/2025: add 1000 * self.round_number to self.score
-        # TODO: 3/13/2025: add 1 to self.round_number
-        # TODO: 3/13/2025: call self's start_new_round method
+            # TODO: 3/13/2025: add 1000 * self.round_number to self.score
+            # TODO: 3/13/2025: add 1 to self.round_number
+            # TODO: 3/13/2025: call self's start_new_round method
         # end of if block
 
     def start_new_round(self):
@@ -114,14 +115,15 @@ class Game:
         # TODO: 3/13/2025: call self.player's reset method
         for alien in self.alien_group:
         # inside the for loop
-        # TODO: 3/13/2025: call alien's reset method
+            # TODO: 3/13/2025: call alien's reset method
         # done with the for loop
 
         #Check if the game is over or if it is a simple round reset
         # TODO: 3/13/2025: if else statement here
-        # check self.player.lives is equal to 0
-        # when the condition is true call self.reset_game()
-        # when the condition is false (else) call self.pause_game(main_text, sub_text)
+        # check if self.player.lives is equal to 0.  Hint Hint == operator
+            # when the condition is true call self.reset_game()
+        # else
+            # when the condition is false (else) call self.pause_game(main_text, sub_text)
 
     def pause_game(self, main_text, sub_text):
         """Pauses the game"""
@@ -129,7 +131,8 @@ class Game:
 
     def reset_game(self):
         """Reset the game"""
-        # TODO: 3/13/2025: call self.pause_game passing in "Final Score: " + str(self.score) and "Press 'Enter' to play again"
+        # TODO: 3/13/2025: call self.pause_game passing in "Final Score: " + str(self.score)
+        #  and "Press 'Enter' to play again"
 
         #Reset game values
         # TODO: 3/13/2025: set the following self variables
