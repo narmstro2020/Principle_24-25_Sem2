@@ -75,7 +75,8 @@ class Game:
     def check_collision(self):
         """Check for collisions"""
         # See if any bullet in the player bullet group hit an alien in the alien group
-        # TODO: 3/13/2025 check if pygame.spite.groupcollide is true passing in self.player_bullet_group, self.alien_group, True, and True into the method
+        # TODO: 3/13/2025 check if pygame.spite.groupcollide() is true
+        #  passing in self.player_bullet_group, self.alien_group, True, and True into the method
         # EXAMPLE: if statement block
         # if something:
             # do something
