@@ -79,6 +79,31 @@ class Game:
             # end of if
         # end of for
 
+        if shift:
+            # start of if
+            #TODO 3/18/2025:  create a variable named breach and assign False to it.
+            for alien in (self.alien_group.sprites()):
+                #start of a for loop
+                #Shift down
+                # TODO 3/18/2025:  add 10 * self.round_number to alien.rect.y
+                #Reverse the direction and move the alien off the edge so 'shift' doesn't trigger
+                # TODO 3/18/2025:  set alien.direction to -1 * alien.direction
+                # TODO 3/18/2025:  add alien.direction * alien.velocity to alien.rect.x
+
+                #Check if an alien reached the ship
+                if alien.rect.bottom >= WINDOW_HEIGHT - 100:
+                    breach = True
+                # end of for loop
+
+            #Aliens breached the line
+            if breach:
+                #Start of if
+                # TODO:  3/18/2025:  play self.breach_sound's
+                # TODO:  3/18/2025: subtract 1 from self.player.lives
+                # TODO:  3/18/2025: call self.check_game_status().  Passing in "Aliens breached the line!", "Press 'Enter' to continue"
+                # end if statement
+        #end of if statement.
+
     def check_collision(self):
         """Check for collisions"""
         # See if any bullet in the player bullet group hit an alien in the alien group
