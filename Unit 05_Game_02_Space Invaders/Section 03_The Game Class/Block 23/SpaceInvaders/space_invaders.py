@@ -69,7 +69,15 @@ class Game:
 
     def shift_aliens(self):
         """Shift a wave of aliens down the screen and reverse direction"""
-        ... #TODO: we will do this one later.
+        #Determine if alien group has hit an edge
+        shift = False
+        for alien in (self.alien_group.sprites()):
+        # start of for.
+            #TODO: 3/18/2025: check if alien.rect.left is less than or equal to 0 or alien.rect.right is greater than or equal to WINDOW_WIDTH
+            # start of if
+                #TODO: 3/18/2025: set shift to True
+            # end of if
+        # end of for
 
     def check_collision(self):
         """Check for collisions"""
