@@ -128,17 +128,42 @@ class Game:
         global running
         # TODO: 3/18/2025: need WHITE and BLACK colors.  Use tuples, 3 255's for white, and 3 0's for black
 
+        #Create main pause text
         # TODO: 3/18/2025: assign to main_text the following:  self.font.render(), passing in main_text, True, and WHITE
         # TODO: 3/18/2025: create a main_rect from main_text using the get_rect() function
         # TODO: 3/18/2025: set main_rect's center to the center of the screen,
         #  using WINDOW_WIDTH, and WIDTH_HEIGHT in a tuple.
         #  Hint hint // division
 
+        #Create sub pause text
         # TODO: 3/18/2025: assign to sub_text the following:  self.font.render(), passing in sub_text, True, and WHITE
         # TODO: 3/18/2025: create a sub_rect from sub_text using the get_rect() function
         # TODO: 3/18/2025: set main_rect's center to the center of the screen but 64 pixels down,
         #  using WINDOW_WIDTH, and WIDTH_HEIGHT in a tuple.
         #  Hint hint // division.  but for the y componeent of the tuple add 64
+
+        #Blit the pause text
+        display_surface.fill(BLACK)
+        display_surface.blit(main_text, main_rect)
+        display_surface.blit(sub_text, sub_rect)
+        pygame.display.update()
+
+        #Pause the game until the user hits enter
+        is_paused = True
+        while is_paused:
+            for event in pygame.event.get():
+                #The user wants to play again
+                # TODO: 3/18/2025: check if event.type is equal to pygame.KEYDOWN
+                #start of if
+                    # TODO: 3/18/2025: check if the event.key is equal to pygame.K_RETURN
+                    # start of if
+                        #TODO: 3/18/2025: set is_paused to False
+                    # end of if
+                # end of if
+
+
+
+
 
 
     def reset_game(self):
