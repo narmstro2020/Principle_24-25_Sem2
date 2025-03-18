@@ -126,7 +126,21 @@ class Game:
 
     def pause_game(self, main_text, sub_text):
         """Pauses the game"""
-        ... #TODO: we will do this one later.
+        global running
+        # TODO: 3/18/2025: need WHITE and BLACK colors.  Use tuples, 3 255's for white, and 3 0's for black
+
+        # TODO: 3/18/2025: assign to main_text the following:  self.font.render(), passing in main_text, True, and WHITE
+        # TODO: 3/18/2025: create a main_rect from main_text using the get_rect() function
+        # TODO: 3/18/2025: set main_rect's center to the center of the screen,
+        #  using WINDOW_WIDTH, and WIDTH_HEIGHT in a tuple.
+        #  Hint hint // division
+
+        # TODO: 3/18/2025: assign to sub_text the following:  self.font.render(), passing in sub_text, True, and WHITE
+        # TODO: 3/18/2025: create a sub_rect from sub_text using the get_rect() function
+        # TODO: 3/18/2025: set main_rect's center to the center of the screen but 64 pixels down,
+        #  using WINDOW_WIDTH, and WIDTH_HEIGHT in a tuple.
+        #  Hint hint // division.  but for the y componeent of the tuple add 64
+
 
     def reset_game(self):
         """Reset the game"""
