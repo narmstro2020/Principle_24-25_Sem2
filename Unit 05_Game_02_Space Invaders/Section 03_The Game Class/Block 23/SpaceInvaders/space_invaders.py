@@ -103,7 +103,10 @@ class Game:
 
     def start_new_round(self):
         """Start a new round"""
-        ... #TODO: we will do this one later.
+        # Create a grid of Aliens 11 columns and 5 rows.
+        for i in range(11):
+            for j in range (5):
+                alien = Alien(64 + i * 64, 64 + j * 64, self.round_number, self.alien_bullet_group)
 
     def check_game_status(self, main_text, sub_text):
         """Check to see the status of the game and how the player died"""
