@@ -161,10 +161,11 @@ class Game:
                     # end of if
                 # end of if
 
-
-
-
-
+                #The user wants to quit
+                # TODO: 3/18/2025: check if the event.type is equal to pygame.QUIT
+                #start of if
+                    # TODO: 3/18/2025: set is_paused to False
+                    # TODO: 3/18/2025: set running to False
 
     def reset_game(self):
         """Reset the game"""
