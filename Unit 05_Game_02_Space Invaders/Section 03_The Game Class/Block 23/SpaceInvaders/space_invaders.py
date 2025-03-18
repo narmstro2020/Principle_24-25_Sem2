@@ -80,7 +80,6 @@ class Game:
         if pygame.sprite.groupcollide():  # don't forget to pass in args
             # TODO: 3/13/2025 call self.alien_hit_sound's play method
             # TODO: 3/13/2025 add 100 to self.score
-        # end of if block.  back tab.
 
         # See if the player has collided with any bullet in the alien bullet group
         # TODO: 3/13/2025 check if pygame.sprite.spritecollide is true passing in self.player, self.alien_bullet_group, True
@@ -156,7 +155,6 @@ class Game:
         # TODO: 3/13/2025: alien_group.empty, alien_bullet_group.empty, player_bullet_group.empty
 
         #Start a new game
-        # TODO: 3/13/2025: call self's start_new_round method
         self.start_new_round()
 
 
