@@ -174,7 +174,7 @@ class Game:
         #Create sub pause text
         # TODO: 3/18/2025: assign to sub_text the following:  self.font.render(), passing in sub_text, True, and WHITE
         # TODO: 3/18/2025: create a sub_rect from sub_text using the get_rect() function
-        # TODO: 3/18/2025: set main_rect's center to the center of the screen but 64 pixels down,
+        # TODO: 3/18/2025: set sub_rect's center to the center of the screen but 64 pixels down,
         #  using WINDOW_WIDTH, and WIDTH_HEIGHT in a tuple.
         #  Hint hint // division.  but for the y componeent of the tuple add 64
 
