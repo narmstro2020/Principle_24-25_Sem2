@@ -73,10 +73,10 @@ class Game:
         shift = False
         for alien in (self.alien_group.sprites()):
         # start of for.
-        # TODO: 3/18/2025: check if alien.rect.left is less than or equal to 0 or alien.rect.right is greater than or equal to WINDOW_WIDTH
-        # start of if
-        # TODO: 3/18/2025: set shift to True
-        # end of if
+            # TODO: 3/18/2025: check if alien.rect.left is less than or equal to 0 or alien.rect.right is greater than or equal to WINDOW_WIDTH
+            # start of if
+                # TODO: 3/18/2025: set shift to True
+            # end of if
         # end of for
 
         if shift:
@@ -97,12 +97,12 @@ class Game:
 
             # Aliens breached the line
             if breach:
-        # Start of if
-        # TODO:  3/18/2025:  play self.breach_sound's
-        # TODO:  3/18/2025: subtract 1 from self.player.lives
-        # TODO:  3/18/2025: call self.check_game_status().  Passing in "Aliens breached the line!", "Press 'Enter' to continue"
-        # end if statement
-        # end of if statement.
+            # Start of if
+                # TODO:  3/18/2025:  play self.breach_sound's
+                # TODO:  3/18/2025: subtract 1 from self.player.lives
+                # TODO:  3/18/2025: call self.check_game_status().  Passing in "Aliens breached the line!", "Press 'Enter' to continue"
+            # end if statement
+            # end of if statement.
 
     def check_collision(self):
         """Check for collisions"""
@@ -140,8 +140,8 @@ class Game:
         # Create a grid of Aliens 11 columns and 5 rows.
         for i in range(11):
             for j in range(5):
-                x = 64 + i * 64  # offset + column * column_spacing
-                y = 64 + j * 64  # offset + row * row_spacing
+                x = 64 + i * 64  # start_offset + column * column_spacing
+                y = 64 + j * 64  # start_offset + row * row_spacing
                 velocity = self.round_number
                 group = self.alien_bullet_group
                 alien = Alien(x, y, velocity, group)
