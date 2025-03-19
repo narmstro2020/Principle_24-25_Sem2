@@ -194,20 +194,20 @@ class Game:
         is_paused = True
         while is_paused:
             for event in pygame.event.get():
-        # The user wants to play again
-        # TODO: 3/18/2025: check if event.type is equal to pygame.KEYDOWN
-        # start of if
-        # TODO: 3/18/2025: check if the event.key is equal to pygame.K_RETURN
-        # start of if
-        # TODO: 3/18/2025: set is_paused to False
-        # end of if
-        # end of if
+                # The user wants to play again
+                # TODO: 3/18/2025: check if event.type is equal to pygame.KEYDOWN
+                # start of if
+                # TODO: 3/18/2025: check if the event.key is equal to pygame.K_RETURN
+                # start of if
+                # TODO: 3/18/2025: set is_paused to False
+                # end of if
+                # end of if
 
-        # The user wants to quit
-        # TODO: 3/18/2025: check if the event.type is equal to pygame.QUIT
-        # start of if
-        # TODO: 3/18/2025: set is_paused to False
-        # TODO: 3/18/2025: set running to False
+                # The user wants to quit
+                # TODO: 3/18/2025: check if the event.type is equal to pygame.QUIT
+                # start of if
+                # TODO: 3/18/2025: set is_paused to False
+                # TODO: 3/18/2025: set running to False
 
     def reset_game(self):
         """Reset the game"""
