@@ -32,7 +32,7 @@ Files are a way to store data permanently. Python can read from and write to man
 ## 2. 📂 Opening and Closing Files
 
 ```python
-file = open("example.txt", "r")  # open file in read mode
+file = open("folder/example.txt", "r")  # open file in read mode
 print(file.read())
 file.close()
 ```
