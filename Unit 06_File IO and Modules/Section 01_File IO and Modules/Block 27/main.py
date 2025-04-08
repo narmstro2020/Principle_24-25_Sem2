@@ -1,3 +1,4 @@
-import calculator
+from calculator import add, subtract, multiply, divide
 
-#TODO: use each function at least one.  and print out results.
+#TODO: use each function printing out the result.
+
